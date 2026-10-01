@@ -1,0 +1,161 @@
+**pdf transcrito com auxilio de IA. 
+
+#ATIVIDADE REMOTA — MÁQUINAS DE TURING
+
+**Disciplina:** Teoria da Computação  
+**Tema:** Máquinas de Turing  
+**Modalidade:** Remota  
+**Valor:** 1,0 ponto
+
+##Material obrigatório
+
+Assista ao vídeo antes de realizar a atividade.
+
+Para realizar esta atividade, assista ao vídeo:
+
+**Akitando #86 — O Computador de Turing e Von Neumann: Por que calculadoras não são computadores?**
+
+Orientação: Assista ao material com atenção e utilize os conceitos apresentados para responder às questões e desenvolver a atividade de simulação.
+
+## 1. Objetivos da atividade
+
+Ao final da atividade, o estudante deverá ser capaz de:
+
+- Compreender o conceito de Máquina de Turing.
+- Identificar os principais componentes de uma Máquina de Turing.
+- Compreender a importância das Máquinas de Turing para a computação.
+- Construir e simular uma Máquina de Turing simples.
+- Reconhecer que existem problemas que não podem ser resolvidos por algoritmos, compreendendo os limites da computação.
+
+## 2. Conteúdo
+
+- Conceito de Máquina de Turing.
+- Fita, cabeça de leitura/escrita e estados.
+- Alfabeto e regras de transição.
+- Funcionamento de uma Máquina de Turing.
+- Simulação computacional.
+- Computabilidade e limites computacionais.
+
+## 3. Desenvolvimento da atividade
+
+### Etapa 1 — Introdução
+
+Após assistir ao vídeo e estudar o material disponibilizado, responda às questões abaixo.
+
+### 1. O que é uma Máquina de Turing?
+
+Uma Máquina de Turing é um modelo matemático utilizado para representar e estudar processos computacionais. Ela possui uma fita que funciona como memória, uma cabeça que pode ler e escrever símbolos e estados que determinam as ações que devem ser realizadas. A máquina segue regras de transição para processar uma entrada e, ao final, pode aceitá-la ou rejeitá-la.
+
+### 2. Quais são os principais componentes de uma Máquina de Turing?
+
+Os principais componentes são a fita, a cabeça de leitura e escrita, os estados, o alfabeto e as regras de transição. A fita armazena os símbolos, enquanto a cabeça realiza a leitura e a escrita. Os estados representam as diferentes situações da máquina e as regras de transição determinam o que ela deve fazer de acordo com o símbolo lido e o estado atual.
+
+### 3. Qual é a importância das Máquinas de Turing para a computação?
+
+As Máquinas de Turing são importantes porque permitem estudar de forma teórica o funcionamento dos algoritmos e os limites da computação. Elas ajudam a entender quais problemas podem ser resolvidos por algoritmos e quais problemas não podem ser resolvidos computacionalmente.
+
+### 4. Qual é a relação entre Máquina de Turing e algoritmo?
+
+Um algoritmo é uma sequência de instruções utilizada para resolver um problema. Uma Máquina de Turing pode representar a execução de um algoritmo por meio de seus estados e regras de transição. Dessa forma, ela serve como um modelo teórico para analisar como um procedimento computacional pode funcionar.
+
+### Etapa 2 — Simulação
+
+Utilize um software ou simulador de Máquina de Turing indicado pelo professor.
+
+Crie uma máquina capaz de reconhecer palavras da forma:
+
+`0ⁿ1ⁿ`
+
+**Exemplos aceitos:**
+
+`01`  
+`0011`  
+`000111`  
+`00001111`
+
+**Exemplos rejeitados:**
+
+`0`  
+`1`  
+`001`  
+`011`  
+`00111`
+
+**Desafio:** A máquina deverá verificar se existe a mesma quantidade de símbolos 0 e 1, seguindo a lógica de funcionamento de uma Máquina de Turing.
+
+### Etapa 3 — Registro da simulação
+
+Após executar a máquina, registre:
+
+- A palavra utilizada como entrada.
+- Os estados percorridos.
+- O resultado da execução: ACEITA ou REJEITA.
+- Uma captura de tela da simulação.
+
+Realize pelo menos 3 testes:
+
+- 2 entradas que devem ser aceitas.
+- 1 entrada que deve ser rejeitada.
+
+### Registro dos testes
+
+| Teste | Entrada | Resultado esperado | Resultado obtido | Estados percorridos |
+|---|---|---|---|---|
+| 1 | `0011` | ACEITA | ACEITA | `q0 -> q1 -> q2` |
+| 2 | `0011` | ACEITA | ACEITA | `q0 -> q1 -> q1` |
+| 3 | `001` | REJEITA | REJEITADA | `q0 -> q1 -> q1` |
+
+### Descrição da Máquina de Turing criada
+
+A máquina verifica se a entrada possui a mesma quantidade de 0 e 1 e se os símbolos estão organizados na forma 0ⁿ1ⁿ. Para isso, ela percorre a fita, marca os símbolos já processados e procura uma correspondência entre cada 0 e um 1. Quando todos os símbolos possuem correspondência, a máquina aceita a entrada. Caso contrário, ela rejeita.
+
+### Etapa 4 — Reflexão sobre os limites computacionais
+
+**Uma Máquina de Turing consegue resolver qualquer problema? Explique com suas palavras por que existem problemas que não podem ser resolvidos por algoritmos.**
+
+Não. Uma Máquina de Turing consegue representar a solução de muitos problemas computacionais, mas existem problemas para os quais não existe um algoritmo capaz de encontrar uma solução para todos os casos. Esses problemas estão relacionados aos limites da computabilidade. Portanto, nem todo problema pode ser resolvido apenas criando um algoritmo, mesmo que exista tempo e recursos suficientes para executá-lo.
+
+## 4. Entrega
+
+O estudante deverá enviar um único arquivo contendo:
+
+- Respostas da Etapa 1;
+- Descrição da Máquina de Turing criada;
+- Capturas de tela da simulação;
+- Resultados dos 3 testes;
+- Resposta da reflexão sobre os limites computacionais.
+
+**Formato:** PDF ou documento do Word.
+
+## 5. Critérios de avaliação — 1,0 ponto
+
+| Critério | Valor |
+|---|---:|
+| Compreensão do conceito e importância das Máquinas de Turing | 0,20 |
+| Construção/configuração da Máquina de Turing | 0,30 |
+| Realização e registro da simulação | 0,20 |
+| Interpretação dos resultados | 0,10 |
+| Compreensão dos limites computacionais | 0,20 |
+| **Total** | **1,00** |
+
+## 6. Questão final
+
+**Problema para reflexão:**
+
+Imagine que você recebeu um problema computacional muito complexo. Como saber se ele é apenas difícil de resolver ou se, na verdade, não existe nenhum algoritmo capaz de resolvê-lo para todos os casos?
+
+Explique utilizando os conceitos estudados sobre Máquinas de Turing, computabilidade e limites computacionais.
+
+Para descobrir isso, é necessário analisar a computabilidade do problema. Um problema pode ser muito difícil ou demorado e ainda possuir um algoritmo que consiga resolver. Já um problema não computável é aquele para o qual não existe um algoritmo capaz de produzir uma solução correta para todos os casos possíveis. As Máquinas de Turing são utilizadas como modelo para estudar justamente essa diferença e identificar os limites dos algoritmos.
+
+## Orientações finais
+
+1. Assista ao vídeo indicado.
+2. Estude os conceitos apresentados.
+3. Responda às questões propostas.
+4. Realize a simulação da Máquina de Turing.
+5. Faça os três testes solicitados.
+6. Registre os resultados e as evidências da simulação.
+7. Responda à reflexão sobre os limites computacionais.
+8. Organize o material em um único arquivo.
+9. Envie o arquivo conforme as orientações do professor.
